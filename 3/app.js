@@ -1,26 +1,16 @@
-const size = prompt("Enter the size of the identity matrix: ");
-const n = parseInt(size);
-
-// Create a 2D array for the identity matrix
-const identityMatrix = [];
-
-// Populate the matrix with 1's on the diagonal and 0's elsewhere
-for (let i = 0; i < n; i++) {
-  const row = [];
-  for (let j = 0; j < n; j++) {
-    if (i === j) {
-      row.push(1);
-    } else {
-      row.push(0);
-    }
-  }
-  identityMatrix.push(row);
-}
-
-// Print the identity matrix
-for (let i = 0; i < n; i++) {
-  document.write(identityMatrix[i].join(" "));
-  document.write("<br>");
+function sub(a,b){
+  alert( a + " - " + b + " is " + parseInt(a-b));
 
 }
-// alert(row)
+function mult(c,d){
+  alert( c + " X " + d + " is " + c*d);
+  
+}
+function division(e,f){
+  alert( e + " / " + f + " is " + e/f);
+  
+}
+function modulus(g,h){
+  alert( g + " % " + h + " is " + g%h);
+  
+}
