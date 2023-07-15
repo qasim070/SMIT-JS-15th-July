@@ -1,16 +1,11 @@
 function checkPalindrome() {
-    let str = prompt("Enter the word to check it is Palendrome or not");
-
-    var len = str.length;
-    var mid = Math.floor(len/2);
-
-    for ( var i = 0; i < mid; i++ ) {
-        if (str[i] !== str[len - 1 - i] ) {
-            alert("true") 
-        }else{ 
-            alert("false")
-            alert(str[len - 1 - i]);
-        } 
+    let val = prompt("Enter any Word to check is it Palindrome or not");
+    let reverseInLoop = "";
+    for (let i = val.length - 1; i >= 0; i--) {
+      reverseInLoop += val[i];
     }
 
-}
+    reverseInLoop.toLowerCase() === val.toLowerCase() ?  
+    alert(val + " is a Palindrome word") :  
+    alert(val + " is not a Palindrome word") ;
+  }
